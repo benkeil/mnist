@@ -1,0 +1,6 @@
+setup.py
+mnist_playground.egg-info/PKG-INFO
+mnist_playground.egg-info/SOURCES.txt
+mnist_playground.egg-info/dependency_links.txt
+mnist_playground.egg-info/requires.txt
+mnist_playground.egg-info/top_level.txt

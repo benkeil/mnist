@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: mnist-playground
+Version: 0.1.0
+Summary: MNIST Playground
+Home-page: https://github.com/benkeil/mnist
+Author: benkeil
+Author-email: UNKNOWN
+License: Apache License Version 2.0
+Description:     Deep learning algorithm for MNIST
+            
+Keywords: KI,AI,MNIST,Machine Learning,Deep Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Beta
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
