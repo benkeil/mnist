@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    mnist = Mnist(os.path.join(os.getcwd(), "datasets/train.csv"), max=100)
+    mnist = Mnist(os.path.join(os.getcwd(), "datasets/train.csv"), rows=100)
     for dataset in mnist.random()[:1]:
         # reshape from 1x784 to 28x28 and scale to 0-1
         array = numpy.asfarray(dataset.data).reshape((28, 28)) / 255

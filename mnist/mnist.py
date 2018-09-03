@@ -1,16 +1,15 @@
 from random import shuffle
 import pandas
-import numpy
 
 
+# mnist class definition
 class Mnist(object):
 
-    def __init__(self, path, max=None):
+    def __init__(self, path, rows=None):
         self._data = []
-        csv = pandas.read_csv(path, nrows=max, sep=';', header=None)
+        csv = pandas.read_csv(path, nrows=rows, sep=';', header=None)
         for row in csv.values:
-            list = numpy.asarray(row)
-            self._data.append(Data(list[0], list[1:]))
+            self._data.append(Data(row[0], row[1:]))
 
     def __iter__(self):
         return self._data
