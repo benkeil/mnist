@@ -7,9 +7,8 @@ from nn import NeuralNetwork
 
 
 def main():
-    # number of input, hidden and output nodes
     load_from_file = True
-    #load_from_file = False
+    # number of input, hidden and output nodes
     input_nodes = 784
     hidden_nodes = 200
     output_nodes = 10
@@ -20,6 +19,7 @@ def main():
     datasets = 60000
 
     n = NeuralNetwork(input_nodes, hidden_nodes, output_nodes, learning_rate)
+
     if not load_from_file:
         train(n, output_nodes, datasets, epochs)
         wih, who = n.get_weights()

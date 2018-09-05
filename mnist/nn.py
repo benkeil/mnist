@@ -29,6 +29,13 @@ class NeuralNetwork(object):
 
         pass
 
+    def get_weights(self):
+        return self.wih, self.who
+
+    def weights(self, wih, who):
+        self.wih = wih
+        self.who = who
+
     # train the neural network
     def train(self, inputs_list, targets_list):
         # convert inputs list to 2d array
@@ -59,13 +66,6 @@ class NeuralNetwork(object):
                                         numpy.transpose(inputs))
 
         pass
-
-    def get_weights(self):
-        return self.wih, self.who
-
-    def weights(self, wih, who):
-        self.wih = wih
-        self.who = who
 
     # query the neural network
     def query(self, inputs_list):
